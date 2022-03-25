@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh ;
+    background-color:#fcfaf9;
+    overflow: hidden;
+   position: relative;
+   
+
+}
+i{
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+}
+header{
+    display: flex;
+    height: 15%;
+    background-color: #e6d9dd;
+    flex-direction: column;
+    font-size: 2rem;
+    
+}
+
+span{
+    border-left:solid 3px black ;
+    margin: 1% 0 0 1%;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    height: 85%;
+    width: 100%;
+    background-color: #f7efef;
+   
+ 
+
+  
+}
+.delete{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+.colonne{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 2% 2% 0 2%;
+    width: 300px;
+    animation-name: animate;
+    transition: all 0.1s ease-in;
+}
+@keyframes animate{
+    from{opacity: 0.2;}
+    to{opacity: 1;}
+}
+.contenu{
+    height: 80%;
+   background-color: white;
+   background-image: url(logo.png);
+   background-size: 150px;
+   background-repeat: no-repeat;
+   background-position:center;
+  
+}
+img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.texte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    text-align: center;
+    background-color: #F8CDDA;
+    font-size: 2rem;
+  
+}
+.modal.content{
+  
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.6s ease-in-out;
+
+  
+} 
+.divContainer{
+    width: 30%;
+    background-color: #f7efef;
+   margin-left: 35%;
+   font-size: 2rem;
+   font-weight: 900;
+   margin-top: 4%;
+   transition: all 0.6s ease-in;
+
+
+
+}
+
+.header{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin: 2% 2%;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 2%;
+    padding: 3%
+
+}
+.btn{
+   
+    text-align: center;
+}
+input{
+    padding: 2%;
+}
+button{
+    font-size: 2rem;
+    border: none;
+    outline: none;
+}
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
